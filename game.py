@@ -25,7 +25,7 @@ class Segment(pygame.sprite.Sprite):
         self.image = pygame.Surface([segment_width, segment_height])
         self.image.fill(WHITE)
 
-        # Make our top-left corner the passed-in location.
+        
         self.rect = self.image.get_rect()
         self.rect.x = x
         self.rect.y = y
@@ -34,7 +34,7 @@ class Segment(pygame.sprite.Sprite):
 # Call this function so the Pygame library can initialize itself
 pygame.init()
 
-# Create an 800x600 sized screen
+# Create a screen
 screen = pygame.display.set_mode([800, 600])
 
 # Set the title of the window
